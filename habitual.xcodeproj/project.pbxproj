@@ -13,6 +13,8 @@
 		E59C7DF8219DF89700780E2F /* HabitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59C7DF6219DF89600780E2F /* HabitsTableViewController.swift */; };
 		E59C7DF9219DF89700780E2F /* HabitsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59C7DF7219DF89700780E2F /* HabitsTableViewController.xib */; };
 		E59C7DFC219DF91F00780E2F /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59C7DFB219DF91F00780E2F /* UIViewControllerExtensions.swift */; };
+		E59C7DFE219E087600780E2F /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59C7DFD219E087600780E2F /* Habit.swift */; };
+		E59C7E00219E0CA800780E2F /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59C7DFF219E0CA800780E2F /* DateExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E59C7DF6219DF89600780E2F /* HabitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsTableViewController.swift; sourceTree = "<group>"; };
 		E59C7DF7219DF89700780E2F /* HabitsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitsTableViewController.xib; sourceTree = "<group>"; };
 		E59C7DFB219DF91F00780E2F /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		E59C7DFD219E087600780E2F /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		E59C7DFF219E0CA800780E2F /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		E59C7DD8219DF6F100780E2F = {
 			isa = PBXGroup;
 			children = (
+				E59C7DFF219E0CA800780E2F /* DateExtensions.swift */,
 				E59C7DE3219DF6F200780E2F /* habitual */,
 				E59C7DE2219DF6F200780E2F /* Products */,
 			);
@@ -57,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				E59C7DE4219DF6F200780E2F /* AppDelegate.swift */,
+				E59C7DFD219E087600780E2F /* Habit.swift */,
 				E59C7DFA219DF8AC00780E2F /* Views */,
 				E59C7DFB219DF91F00780E2F /* UIViewControllerExtensions.swift */,
 				E59C7DEB219DF6F400780E2F /* Assets.xcassets */,
@@ -147,7 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E59C7DF8219DF89700780E2F /* HabitsTableViewController.swift in Sources */,
+				E59C7E00219E0CA800780E2F /* DateExtensions.swift in Sources */,
 				E59C7DFC219DF91F00780E2F /* UIViewControllerExtensions.swift in Sources */,
+				E59C7DFE219E087600780E2F /* Habit.swift in Sources */,
 				E59C7DE5219DF6F200780E2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationController.setViewControllers([mainViewController], animated: false)
         
         // Tell the window to load the main controller as the root view
-        window!.rootViewController = mainViewController
+        window!.rootViewController = navigationController
         window!.makeKeyAndVisible()
         
         return true
