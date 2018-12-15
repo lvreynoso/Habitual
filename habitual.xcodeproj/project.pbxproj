@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E51BC75121C509A700B971DD /* ConfirmHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BC74F21C509A700B971DD /* ConfirmHabitViewController.swift */; };
+		E51BC75221C509A700B971DD /* ConfirmHabitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E51BC75021C509A700B971DD /* ConfirmHabitViewController.xib */; };
 		E59C7DE5219DF6F200780E2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59C7DE4219DF6F200780E2F /* AppDelegate.swift */; };
 		E59C7DEC219DF6F400780E2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59C7DEB219DF6F400780E2F /* Assets.xcassets */; };
 		E59C7DEF219DF6F400780E2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E59C7DED219DF6F400780E2F /* LaunchScreen.storyboard */; };
@@ -20,9 +22,13 @@
 		E5AD39D021C4FAF4001AFC2B /* PersistenceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD39CF21C4FAF4001AFC2B /* PersistenceLayer.swift */; };
 		E5AD39D321C4FCA8001AFC2B /* AddHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD39D121C4FCA8001AFC2B /* AddHabitViewController.swift */; };
 		E5BEA05521C4FE25006986F0 /* AddHabitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5BEA05421C4FE25006986F0 /* AddHabitViewController.xib */; };
+		E5BEA05821C50024006986F0 /* HabitImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BEA05621C50024006986F0 /* HabitImageCollectionViewCell.swift */; };
+		E5BEA05921C50024006986F0 /* HabitImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5BEA05721C50024006986F0 /* HabitImageCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E51BC74F21C509A700B971DD /* ConfirmHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmHabitViewController.swift; sourceTree = "<group>"; };
+		E51BC75021C509A700B971DD /* ConfirmHabitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmHabitViewController.xib; sourceTree = "<group>"; };
 		E59C7DE1219DF6F200780E2F /* habitual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = habitual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59C7DE4219DF6F200780E2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E59C7DEB219DF6F400780E2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +44,8 @@
 		E5AD39CF21C4FAF4001AFC2B /* PersistenceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceLayer.swift; sourceTree = "<group>"; };
 		E5AD39D121C4FCA8001AFC2B /* AddHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitViewController.swift; sourceTree = "<group>"; };
 		E5BEA05421C4FE25006986F0 /* AddHabitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddHabitViewController.xib; sourceTree = "<group>"; };
+		E5BEA05621C50024006986F0 /* HabitImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		E5BEA05721C50024006986F0 /* HabitImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitImageCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +99,11 @@
 				E59C7DF6219DF89600780E2F /* HabitsTableViewController.swift */,
 				E59C7DF7219DF89700780E2F /* HabitsTableViewController.xib */,
 				E5AD39D121C4FCA8001AFC2B /* AddHabitViewController.swift */,
+				E51BC74F21C509A700B971DD /* ConfirmHabitViewController.swift */,
+				E51BC75021C509A700B971DD /* ConfirmHabitViewController.xib */,
 				E5BEA05421C4FE25006986F0 /* AddHabitViewController.xib */,
+				E5BEA05621C50024006986F0 /* HabitImageCollectionViewCell.swift */,
+				E5BEA05721C50024006986F0 /* HabitImageCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,8 +168,10 @@
 			files = (
 				E59C7DEF219DF6F400780E2F /* LaunchScreen.storyboard in Resources */,
 				E5BEA05521C4FE25006986F0 /* AddHabitViewController.xib in Resources */,
+				E51BC75221C509A700B971DD /* ConfirmHabitViewController.xib in Resources */,
 				E59C7DF9219DF89700780E2F /* HabitsTableViewController.xib in Resources */,
 				E5AD39CE21C4F793001AFC2B /* HabitTableViewCell.xib in Resources */,
+				E5BEA05921C50024006986F0 /* HabitImageCollectionViewCell.xib in Resources */,
 				E59C7DEC219DF6F400780E2F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,10 +184,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E59C7DF8219DF89700780E2F /* HabitsTableViewController.swift in Sources */,
+				E5BEA05821C50024006986F0 /* HabitImageCollectionViewCell.swift in Sources */,
 				E59C7E00219E0CA800780E2F /* DateExtensions.swift in Sources */,
 				E59C7DFC219DF91F00780E2F /* UIViewControllerExtensions.swift in Sources */,
 				E5AD39D021C4FAF4001AFC2B /* PersistenceLayer.swift in Sources */,
 				E59C7DFE219E087600780E2F /* Habit.swift in Sources */,
+				E51BC75121C509A700B971DD /* ConfirmHabitViewController.swift in Sources */,
 				E5AD39CD21C4F793001AFC2B /* HabitTableViewCell.swift in Sources */,
 				E59C7DE5219DF6F200780E2F /* AppDelegate.swift in Sources */,
 				E5AD39D321C4FCA8001AFC2B /* AddHabitViewController.swift in Sources */,
