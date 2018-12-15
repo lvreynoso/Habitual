@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddHabitViewController" customModule="habitual" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OX-kR-Tg6">
+                    <rect key="frame" x="15" y="597" width="345" height="50"/>
+                    <color key="backgroundColor" red="0.33079756450233588" green="0.73865431914365476" blue="0.62646406463381943" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6HL-dR-0Wz"/>
+                    </constraints>
+                    <state key="normal" title="Pick Photo">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GdT-tu-iBm">
+                    <rect key="frame" x="15" y="35" width="345" height="485.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Wan-B6-tnb">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GdT-tu-iBm" secondAttribute="trailing" constant="15" id="BSB-BF-IGk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4OX-kR-Tg6" secondAttribute="trailing" constant="15" id="I5m-vD-lGI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="4OX-kR-Tg6" secondAttribute="bottom" constant="20" id="LTU-i9-aK9"/>
+                <constraint firstItem="4OX-kR-Tg6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="ULr-Dq-aAz"/>
+                <constraint firstItem="GdT-tu-iBm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="a8f-hA-I9j"/>
+                <constraint firstItem="GdT-tu-iBm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="biC-wt-guR"/>
+                <constraint firstItem="GdT-tu-iBm" firstAttribute="height" secondItem="vUN-kp-3ea" secondAttribute="height" multiplier="0.75" id="sdI-uY-ww2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="140" y="154.27286356821591"/>
+        </view>
+    </objects>
+</document>

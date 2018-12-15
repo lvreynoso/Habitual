@@ -10,34 +10,45 @@ import UIKit
 
 class HabitsTableViewController: UITableViewController {
     
+    private var persistance = PersistenceLayer()
+    
     var names: [String] = ["Alan", "Adriana", "Adam", "Anne", "Mitchell", "Dani"]
     var habits: [Habit] = [
-        Habit(title: "Go to bed before 10p"),
-        Habit(title: "Drink 8 glasses of water"),
-        Habit(title: "Commit today"),
-        Habit(title: "Stand up every hour")
+        Habit(title: "Go to bed before 10p", image: Habit.Images.book),
+        Habit(title: "Drink 8 glasses of water", image: Habit.Images.book),
+        Habit(title: "Commit today", image: Habit.Images.book),
+        Habit(title: "Stand up every hour", image: Habit.Images.book)
     ]
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        persistance.setNeedsToReloadHabits()
+        tableView.reloadData()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setupNavBar()
+        tableView.register(HabitTableViewCell.nib, forCellReuseIdentifier: HabitTableViewCell.identifier)
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return habits.count
+        return persistance.habits.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: UITableViewCell
-        if let dequeueCell = tableView.dequeueReusableCell(withIdentifier: "cell") {
+        var cell: HabitTableViewCell
+        if let dequeueCell = tableView.dequeueReusableCell(withIdentifier: HabitTableViewCell.identifier) as? HabitTableViewCell {
             cell = dequeueCell
         } else {
-            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+            cell = UITableViewCell(style: .default, reuseIdentifier: "cell") as! HabitTableViewCell
         }
         
-        cell.textLabel?.text = habits[indexPath.row].title
+        let habit = persistance.habits[indexPath.row]
+        cell.configure(habit)
         
         return cell
     }
@@ -63,8 +74,8 @@ extension HabitsTableViewController {
     }
     
     @objc func pressAddHabit(_ sender: UIBarButtonItem) {
-        habits.insert(Habit(title: "Hello, World!"), at: 0)
-        let topIndexPath = IndexPath(row: 0, section: 0)
-        tableView.insertRows(at: [topIndexPath], with: .automatic)
+        let addHabitVc = AddHabitViewController.instantiate()
+        let navigationController = UINavigationController(rootViewController: addHabitVc)
+        present(navigationController, animated: true, completion: nil)
     }
 }
